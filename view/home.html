@@ -1,0 +1,156 @@
+<!--Victor Stahlman
+    Personal website 
+    Portfolio project
+    March 21
+    -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>VCStahlman</title>
+    <meta name="description" content="A simple file to start an HTML5 page">
+    <meta name="author" content="Victor Stahlman">
+
+    <!-- Mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/display.js"></script>
+    <!--links the js file-->
+    <link rel="shortcut icon" href="../images/v.ico" type="image/v.ico">
+    <!--sets the favicon to a little v -->
+
+    <link rel="stylesheet" href="../css/style.css?v=1.0">
+
+    <!--these are some cdn's for bootstrap, jQuery, etc-->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<!--Start of the body -->
+
+<body class="mainBody">
+
+    <div id="headerid"></div>
+
+
+    <section class="fluid container centered">
+
+        <!--makes a reactive container with photo round and a welcome at the top then further down is the photo of the day area-->
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-7">
+                <div class="carousel slide" data-ride="carousel" id="demo">
+                    <ul class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#demo"></li>
+                        <li data-slide-to="1" data-target="#demo"></li>
+                        <li data-slide-to="2" data-target="#demo"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="imgsize1" alt="Carousel Image" src="../images/jump.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="imgsize1" alt="Carousel Image" src="../images/trestle.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="imgsize1" alt="Carousel Image" src="../images/peteDam.jpg">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" data-slide="prev" href="#demo">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next" href="#demo">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 infoCard">
+                <h4 class="centered">Welcome</h4>
+                <p>You have made your way onto my page welcome. Feel free to browse around and contact me if you are interested in anything I am doing.
+                </p>
+                <h2>Who am I.?</h2>
+                <p> I am a senior CS student at Clarion University. I studied Computer Science and I have a minor in Anthropology.
+                    <br> I have experience with 10+ programming languages, but tend to focus on C#, Java, and Python. Learn more about me and my hobbies on the
+                    <a href="about.html"> About Me </a> page. <br>
+
+
+                </p>
+
+            </div>
+
+
+            <article class="centered">
+                <span>  
+                        <div class="left">
+                            
+                        <h2>Programming languages</h2>
+                        <p> This is a list of languages I have learned over my schooling, and hobbist years.</p>
+                            <ul>
+                                <li>C</li>
+                                <li>C++</li>
+                                - Arduino experience
+                                <li>C#</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>Prolog (Logical language)</li>
+                                <li>Racket (Functional language)</li>
+                                <li>Assembly</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                - JSON
+                                - Node
+                                <li>PHP</li>
+                                <li>SQL (webbased and on client server applications)</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <div class="centered ">
+                                <img   src= "../images/cliffself.jpg" 
+                            alt = "Me at devils rock on lake Temiskaming in Ontario" class= "col-16 col-sm-12 col-md-9">
+                            </div>
+                            
+                        </div>
+                    </span>
+
+
+            </article>
+
+            <article>
+                <div class="left">
+                    <span>
+                        <h2>Current Projects</h2>
+                        <p>There are a number of current projects that I am working on in my freetime (what little I have). 
+                            They are in relaity quite simple but I want to refresh on some ideas and techniques 
+                            I have learned over the years to display for potential employers.
+                        </p>
+                        <p>Go take a look at some of them at <a href="../view/projects.html">Projects</a></p>
+                </span>
+
+                </div>
+
+                <aside class="right">
+                    <h2>Contact me</h2>
+                    <p>If you look around and see what you like, or you want to have me work on a project visit
+                        <a href="../view/contact.html">Contacts</a>.
+                    </p>
+                </aside>
+            </article>
+
+
+        </div>
+
+
+
+    </section>
+
+    <div id="footerid">
+    </div>
+</body>
+
+</html>
