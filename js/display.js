@@ -99,6 +99,9 @@ function displayheaderM() {
             '<li class="nav-item">' +
             '<a class="nav-link" href="../view/contactMaddie.html">Contacts</a>' +
             '</li>' +
+            '<li class="nav-item">' +
+            '<a class="nav-link" href="../view/lessons.html">Lessons</a>' +
+            '</li>' +
 
             '<!--dropdown for the admin stuff including grading-->' +
 
