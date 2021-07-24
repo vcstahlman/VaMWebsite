@@ -14,7 +14,7 @@ function displayheader() {
             '<header class= "pagehead"> <h1 id ="titlehead" > V.Stahlman </h1> </header><!--the little rectagle with V.Stahlman at the top left of the header of the page, and the background to the header is done with css--> ' +
 
             '<nav class="navbar navbar-expand-md navbar-dark"><!--sets up a nav and uses some bootstrap-->' +
-            '<a class="navbar-brand   d-lg-block" href="home.html">Home</a>' +
+            '<a class="navbar-brand   d-lg-block" href="home.html">Couple Home</a>' +
             '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">' +
             '<span class="navbar-toggler-icon"></span>' +
             '</button><!--this is stuff for that "hamburger" button-->' +
@@ -22,13 +22,13 @@ function displayheader() {
             '<div class="collapse navbar-collapse" id="navbarSupportedContent"><!--stuff that is dynamic, as in it can go in and out of the hamburger-->' +
             '<ul class="navbar-nav mr-auto">' +
             '<li class="nav-item ">' +
-            '<a class="nav-link" href=""> </a>' +
+            '<a class="nav-link" href="../view/homeV.html"> My Home</a>' +
             '</li>' +
             '<li class="nav-item">' +
-            '<a class="nav-link" href="../view/about.html">About</a>' +
+            '<a class="nav-link" href="../view/aboutVictor.html">About</a>' +
             '</li>' +
             '<li class="nav-item">' +
-            '<a class="nav-link" href="../view/contact.html">Contacts</a>' +
+            '<a class="nav-link" href="../view/contactVictor.html">Contacts</a>' +
             '</li>' +
 
             '<!--dropdown with likely additions for the site-->' +
@@ -71,6 +71,48 @@ function displayheader() {
     }
 }
 
+
+//event listener that runs the header when the page gets loaded
+document.addEventListener("DOMContentLoaded", displayheaderM);
+
+// sets up a header and nav that is shared between all the pages
+function displayheaderM() {
+    try {
+        document.getElementById("headeridM").innerHTML =
+            '<div class="fluid container" id="pagetop"> ' +
+            '<header class= "pageheadM"> <h1 id ="titleheadM" > M.Williams </h1> </header>' +
+
+            '<nav class="navbar navM navbar-expand-md navbar-dark"><!--sets up a nav and uses some bootstrap-->' +
+            '<a class="navbar-brand   d-lg-block" href="home.html">Couple Home</a>' +
+            '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">' +
+            '<span class="navbar-toggler-icon"></span>' +
+            '</button><!--this is stuff for that "hamburger" button-->' +
+
+            '<div class="collapse navbar-collapse" id="navbarSupportedContent"><!--stuff that is dynamic, as in it can go in and out of the hamburger-->' +
+            '<ul class="navbar-nav mr-auto">' +
+            '<li class="nav-item ">' +
+            '<a class="nav-link" href="../view/homeM.html">My Home </a>' +
+            '</li>' +
+            '<li class="nav-item">' +
+            '<a class="nav-link" href="../view/aboutMaddie.html">About</a>' +
+            '</li>' +
+            '<li class="nav-item">' +
+            '<a class="nav-link" href="../view/contactMaddie.html">Contacts</a>' +
+            '</li>' +
+
+            '<!--dropdown for the admin stuff including grading-->' +
+
+
+            '</ul>' +
+            '</div>' +
+            '</nav>'
+    }
+    
+    catch (load) {
+        //if not able to find display header it will continue without trying agian till new page
+    }
+}
+
 //sets up a footer that is constant between the pages
 document.addEventListener("DOMContentLoaded", displayfooter);
 
@@ -82,6 +124,21 @@ function displayfooter() {
             '<h6 class="text-center">Made by <a href="mailto:vicstahlman@gmail.com">Victor Stahlman</a></h6>    <!--has an email link after saying it was made by me-->' +
             '<p class="text-center"> V.Stahlman 2021</p>   ' + //Copyright &copy;
             '<p class="text-center">Brought to you by my need to have a job XD</p>' +
+            '</footer>' +
+            '</div>'
+    } catch (load) {}
+}
+
+document.addEventListener("DOMContentLoaded", displayfooterM);
+
+function displayfooterM() {
+    try {
+        document.getElementById("footeridM").innerHTML =
+            '<div class=" fluid container" id="pagebottomM"> <!-- div for styling and responsiveness-->' +
+            '<footer>' +
+            '<h6 class="text-center">Made for <a href="mailto:ms.willaimswonderfulworld@gmail.com">Maddie Willaims </a></h6>    <!--has an email link after saying it was made by me-->' +
+            '<p class="text-center"> V.Stahlman 2021</p>   ' + //Copyright &copy;
+            '<p class="text-center">Thank you for visiting!!</p>' +
             '</footer>' +
             '</div>'
     } catch (load) {}

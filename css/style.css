@@ -15,6 +15,10 @@ purpose: create a web page that shows your knowledge of client side web coding.*
    .mainBody {
        background-color: #133131;
    }
+
+   .mainBodyM {
+       background-color: #5d7697;
+   }
    
    .center {
        display: block;
@@ -60,6 +64,28 @@ purpose: create a web page that shows your knowledge of client side web coding.*
        font-family:cursive;
    }
    /*this set of commands sets the sizes of various pictures used in the website*/
+
+   .pageheadM {
+    background-color: #602477;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    background-image: url("../images/Span.jpg");
+    background-size: cover;
+}
+/* Sets the color of the text in the header with the id titlehead, and
+ sets a border, background color, and padding around it.*/
+
+#titleheadM {
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #3b79a9;
+    width: 250px;
+    border: rgb(35, 33, 70) 5px solid;
+    padding: 5px;
+    font-family:cursive;
+}
+/*this set of commands sets the sizes of various pictures used in the website*/
    
    .imgsizing {
        width: 100%;
@@ -91,12 +117,17 @@ purpose: create a web page that shows your knowledge of client side web coding.*
        border-color: #eeeeee;
    }
 
+   /* Color Sets */
+
    .red{background-color:firebrick;}
    .green{background-color:rgb(34, 178, 99);}
    .blue{background-color:rgb(55, 53, 146);}
    .yellow{background-color:rgb(146, 135, 67);}
    .darkred{background-color:darkmagenta;}
    .lightblue{background-color:rgb(12, 147, 192);}
+   
+
+   
    /* Sets the background color, and the sizing of the border/padding. */
    
    .navhead {
@@ -120,6 +151,25 @@ purpose: create a web page that shows your knowledge of client side web coding.*
        background-color: #133131
    }
    
+
+   .navheadM {
+    background-color: #877f7f;
+    padding: 5px 5px 10px 5px;
+    border: solid white 2px;
+}
+
+.navM {
+    background-color: #5366a5;
+}
+/* Changes the font, and color of links that are in the nav*/
+
+.navheadM a {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
    .login {
        text-align: right;
    }
@@ -187,6 +237,16 @@ and sized the margin etc., and changed the font color */
        color: white;
        text-align: center;
    }
+
+   #pagebottomM footer {
+    clear: both;
+    background-color: #143572;
+    border: solid white 2px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+}
    
    footer a {
        color: white;
@@ -243,4 +303,21 @@ and sized the margin etc., and changed the font color */
    #panel {
        padding: 50px;
        display: none;
+   }
+
+   .Vic{
+    background-color: #1e613c;
+    border: solid white 2px;
+    
+    color: white;
+    text-align: center;
+
+   }
+   
+   .Maddie{
+    background-color: #134ab1;
+    border: solid white 2px;
+    color: white;
+    text-align: center;
+
    }
