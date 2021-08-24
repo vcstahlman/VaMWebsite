@@ -8,8 +8,23 @@ const store = [
         description:"This unit taught about the life cycle and anatomy of butterflies.",
         date:"Spring 2021",
         subjects:"Science",
-        color:"red"
+        color:"green"
+    },
+    {
+        name:"Escape rooms",
+        description:"These usually involce multiple subjects and they are themed on the time or what the kids just learned",
+        date:"Spring 2021",
+        subjects:"Multiple subjects",
+        color:"darkred"
+    },
+    {
+        name:"Coins and money",
+        description:"This was done through the school shope that I made. In it I had some deskpets and toys for them to play with. For good work students would get coins and would be able to use it to get mini erasers at the shop",
+        date:"Spring 2021",
+        subjects:"Math",
+        color:"blue"
     }
+
 ]
 
 
